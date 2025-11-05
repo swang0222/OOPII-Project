@@ -1,4 +1,5 @@
-Role 1: The "Security & Filtering" Lead
+Role 1: The "Security & Filtering" Lead: 汪
+
 This person is responsible for checking every incoming request before it hits the main application logic.
     
     Primary Components: Authentication & API Throttling
@@ -21,7 +22,8 @@ This person is responsible for checking every incoming request before it hits th
         
         User (a simple data class)
 
-Role 2: The "Backend & Data Model" Lead
+Role 2: The "Backend & Data Model" Lead：刘
+
 This person is responsible for all the "business logic" and the data structures that the API uses. They build the actual trading simulation.
 
     Primary Components: Generic Connectivity & Data Models
@@ -48,7 +50,8 @@ This person is responsible for all the "business logic" and the data structures 
 
         MarketOrder, LimitOrder (concrete classes inheriting from TradeOrder)
 
-Role 3: The "Gateway & Integration" Lead
+Role 3: The "Gateway & Integration" Lead：Tim
+
 This person builds the main entry point and is responsible for putting all the pieces together. They are the "customer" of the other two team members.
     
     Primary Components: API Gateway (Facade Pattern) & Final Integration
