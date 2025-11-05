@@ -1,1 +1,14 @@
-# 进行中
+# Step 1: Key Classes to Build in order:
+  Build all data models in this step
+  1. MarketDataQuery (This object represents the user's request for data)
+  2. PriceBar (This object represents a single piece of data returned from a query)
+  3. TradeOrder (abstract base class)
+  4. MarketOrder, LimitOrder (concrete classes inheriting from TradeOrder)
+  5. OrderReceipt(This is the simple object you return after a user submits an order)
+
+# Step 2: Implement the IConnector interface:
+  Build the engine that uses the data models, which is MockBrokerConnector (implements IConnector)
+  1. getMarketData(MarketDataQuery query)
+  2. submitOrder(TradeOrder order)
+  3. getAccountInfo(String apiKey)
+
